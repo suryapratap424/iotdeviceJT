@@ -23,7 +23,37 @@
             <input type="text" placeholder="Device ID" id="device">
             <button id="submit">ADD DEVICE</button>
         </div>
-        <div id="breathing">
+        <div class="box" id="polutant">
+            <select name="location" id="location">
+                <option value="DAQI(Central delhi)">DAQI(Central delhi)</option>
+                <option value="DAQI(West delhi)">DAQI(West delhi)</option>
+            </select>
+            <i class="fas fa-info-circle"></i>
+            <img src="./polutant.png" alt="polutant">
+            <span>Dominant Pollutant - <span id="Pval">PM</span></span>
+        </div>
+
+        <div class="box" id="forecast">
+            <h5>HOURLY FORECAST</h5>
+            <b>Low Air Pollution</b><div><span id="pollu/10">2</span>/10</div>
+            <img src="./30days.png" alt="forecast">
+            <span>Check Last 30 Days</span>
+        </div>
+        <div class="box" id="tips">
+            <h5>HEALTH TIPS</h5>
+            <ul id="bar">
+                <li class="item">General</li>
+                <li class="item">Asthma</li>
+                <li class="item">Children</li>
+                <li class="item">Elder</li>
+            </ul>
+            <p class="message" id="General">for General</p>
+            <p class="message" id="Asthma">for Asthma</p>
+            <p class="message" id="Children">for Children</p>
+            <p class="message" id="Elder">for Elder</p>
+        </div>
+
+        <div class="box">
             <h5>WHAT AM I BREATHING RIGHT NOW</h5>
             <ul id="table">
                 <li>
@@ -45,6 +75,6 @@
             </ul>
         </div>
     </div>
-<script src="./app.js"></script>
+    <script src="./app.js"></script>
 
 </html>

@@ -18,15 +18,20 @@ body {
 }
 #right {
   width: 25%;
+  height: 100vh;
+  overflow: auto;
   background-color: #c4ebc8;
-  color: rgb(0, 68, 87);
+  /* color: rgb(0, 87, 72); */
   display: flex;
   flex-direction: column;
 }
 #right #up {
   display: grid;
   padding: 1rem;
+  position: sticky;
+  top: 0px;
   grid-template-columns: 1fr 1fr;
+  background-color: #c4ebc8;
   justify-items: center;
 }
 #right h5{
@@ -50,14 +55,105 @@ body {
   cursor: pointer;
   font-weight: bold;
   background-color: rgb(0, 23, 156);
-  color: rgb(236, 251, 255);
+  background-color: rgb(0, 87, 72);
+  color: #fffdfd;
 }
-#breathing{
+.box{
   background-color: #fffdfd;
   border-radius: 3px;
   margin: 0.3rem;
   padding: 1rem;
+  /* min-height: 40vh; */
 }
+#location{
+  border: none;
+  font-size: inherit;
+  font-weight: bold;
+}
+/*-----------------------------pollutant box-----------------------------*/
+#polutant{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+#polutant select{
+  display: grid;
+  justify-self: left;
+}
+#polutant i{
+  display: grid;
+  justify-self: right;
+}
+#polutant img{
+  width: 100%;
+  border-bottom: 2px solid rgba(197, 197, 197, 0.459);
+  border-top: 2px solid rgba(197, 197, 197, 0.459);
+  padding: 0.5rem 0;
+  grid-column: 1/-1;
+}
+#polutant span{
+  font-size: small;
+  grid-column: 1/-1;
+}
+#polutant span #Pval{
+  font-weight: bold;
+}
+/*-----------------------------pollutant box-----------------------------*/
+/*-----------------------------forecast box-----------------------------*/
+#forecast{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+#forecast h5{
+  display: grid;
+  justify-self: left;
+  grid-column: 1/-1;
+}
+#forecast b{
+  display: grid;
+  justify-self: left;
+}
+#forecast img{
+  width: 100%;
+  padding: 0.5rem 0;
+  grid-column: 1/-1;
+}
+#forecast>span{
+  font-size: small;
+  grid-column: 1/-1;
+}
+/*-----------------------------forecast box-----------------------------*/
+/*-----------------------------health box-----------------------------*/
+#tips #bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#bar .item{
+  text-align: center;
+  width: 100%;
+  font-size: small;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.459);
+  border-bottom: 2px solid rgba(197, 197, 197, 0.459);
+  cursor: pointer;
+}
+#bar #active{
+  transition: 0.5s;
+  color: blue;
+  border-bottom: 2px solid blue;
+} 
+.message{
+  display: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: small;
+}
+/*-----------------------------health box-----------------------------*/
 #table{
   width: 90%;
   margin: auto;
@@ -75,10 +171,10 @@ body {
 }
 ::-webkit-scrollbar {
   width: 4px;
-  background-color: rgb(0, 23, 156);
+  background-color: rgb(0, 87, 72);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 160, 233);
+  background-color: rgb(0, 190, 149);
   border-radius: 1rem;
 }
 
