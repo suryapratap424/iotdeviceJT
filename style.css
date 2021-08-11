@@ -21,7 +21,7 @@ body {
   height: 100vh;
   overflow: auto;
   background-color: #c4ebc8;
-  /* color: rgb(0, 87, 72); */
+  /* color: rgb(0, 87, 72); text color */
   display: flex;
   flex-direction: column;
 }
@@ -86,11 +86,10 @@ body {
   display: grid;
   justify-self: right;
 }
-#polutant img{
+#polutant canvas{
   width: 100%;
   border-bottom: 2px solid rgba(197, 197, 197, 0.459);
   border-top: 2px solid rgba(197, 197, 197, 0.459);
-  padding: 0.5rem 0;
   grid-column: 1/-1;
 }
 #polutant span{
@@ -117,9 +116,8 @@ body {
   display: grid;
   justify-self: left;
 }
-#forecast img{
+#forecast canvas{
   width: 100%;
-  padding: 0.5rem 0;
   grid-column: 1/-1;
 }
 #forecast>span{
@@ -165,7 +163,7 @@ body {
   border-bottom: 2px solid rgba(197, 197, 197, 0.459);
 }
 #table li div{
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
 }
